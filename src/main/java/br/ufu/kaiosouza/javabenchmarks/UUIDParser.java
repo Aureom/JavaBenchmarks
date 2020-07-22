@@ -10,10 +10,10 @@ Benchmark                                     (name)  Mode  Cnt    Score   Error
 fromStringJDK9  1ad3b484-ed7e-4bbf-8880-a9d9d692d6a4  avgt    5  165,442 ± 2,184  ns/op
 fromStringJDK8  1ad3b484-ed7e-4bbf-8880-a9d9d692d6a4  avgt    5  394,961 ± 1,799  ns/op
 
-JDK9 = 0,000165442 seconds
-JDK8 = 0,000394961 seconds
+JDK9 = 0,000000165442 seconds
+JDK8 = 0,000000394961 seconds
 
-0,000229519 seconds difference, JDK9 method is 238,7% faster than JDK8
+0,0002 seconds difference, JDK9 method is 138,7% faster than JDK8
  */
 
 @BenchmarkMode(Mode.AverageTime)
