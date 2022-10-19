@@ -4,6 +4,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openjdk.jmh.annotations.*;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -36,7 +37,7 @@ stringConcat 0,044270142382 seconds
 @State(Scope.Benchmark)
 public class StringConcatenation {
 
-    public ArrayList<String> strings = new ArrayList<>();
+    protected static final List<String> strings = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
         org.openjdk.jmh.Main.main(args);
@@ -70,4 +71,5 @@ public class StringConcatenation {
 
         return stringBuilder.toString();
     }
+
 }
